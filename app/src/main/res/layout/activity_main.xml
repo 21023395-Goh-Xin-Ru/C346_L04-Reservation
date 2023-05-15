@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pexels_volkan_vardar_3887985"
+    android:orientation="vertical"
+    android:scrollbarSize="3dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3BA2F0FF"
+        android:scrollbarSize="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/el_messiri_bold"
+                android:gravity="center"
+                android:paddingTop="30dp"
+                android:text="@string/header"
+                android:textAllCaps="true"
+                android:textColor="#E1A140"
+                android:textSize="30sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#54CD8E8E"
+                android:textColorHint="#DEB3AB"
+                app:hintTextColor="#DEB3AB">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nameEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#8D1B2E3C"
+                    android:drawableStart="@drawable/baseline_person_24"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/el_messiri_semibold"
+                    android:hint="@string/name"
+                    android:textColor="#DEB3AB"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/mobileTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#54CD8E8E"
+                android:textColorHint="#DEB3AB"
+                app:hintTextColor="#DEB3AB">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mobileEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#8D1B2E3C"
+                    android:drawableStart="@drawable/baseline_call_24"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/el_messiri_semibold"
+                    android:hint="@string/mobileNo"
+                    android:paddingRight="20dp"
+                    android:textColor="#DEB3AB"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#54CD8E8E"
+                android:textColorHint="#DEB3AB"
+                app:hintTextColor="#DEB3AB">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sizeEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#8D1B2E3C"
+                    android:drawableStart="@drawable/baseline_group_24"
+                    android:drawableLeft="@drawable/baseline_group_24"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/el_messiri_semibold"
+                    android:hint="@string/sizeGroup"
+                    android:textColor="#DEB3AB"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4F2E1A1A"
+                android:drawableStart="@drawable/baseline_smoking_rooms_24"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/el_messiri_semibold"
+                android:paddingLeft="20dp"
+                android:text="@string/smoking"
+                android:textColor="#DEB3AB"
+                android:textSize="15sp"
+                app:buttonTint="#DEB3AB" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#8D1B2E3C"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#8D1B2E3C"
+                    android:fontFamily="@font/el_messiri_semibold"
+                    android:paddingRight="5dp"
+                    android:text="@string/date"
+                    android:textColor="#DEB3AB"
+                    android:textSize="15sp" />
+
+                <DatePicker
+                    android:id="@+id/datePicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#CAA5A4"
+                    android:calendarViewShown="false"
+                    android:datePickerMode="spinner" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="#8D1B2E3C">
+
+                <TextView
+                    android:id="@+id/timeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#8D1B2E3C"
+                    android:fontFamily="@font/el_messiri_semibold"
+                    android:paddingRight="3dp"
+                    android:text="@string/time"
+                    android:textColor="#DEB3AB"
+                    android:textSize="15sp" />
+
+                <TimePicker
+                    android:id="@+id/timePicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFD8B1AF"
+                    android:calendarViewShown="false"
+                    android:timePickerMode="spinner" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <Button
+                    android:id="@+id/confirmBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/confirm"
+                    android:textColor="#DEB3AB"
+                    app:backgroundTint="#56382D" />
+
+                <Button
+                    android:id="@+id/resetBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/reset"
+                    android:textColor="#DEB3AB"
+                    app:backgroundTint="#56382D" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

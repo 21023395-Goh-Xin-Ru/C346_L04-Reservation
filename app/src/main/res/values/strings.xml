@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">L04-Reservation</string>
+    <string name="header">Online Reservation</string>
+    <string name="name">Name</string>
+    <string name="mobileNo">Mobile Number</string>
+    <string name="sizeGroup">Size of the Group</string>
+    <string name="smoking">Smoking Area?</string>
+    <string name="date">Choose a Date: </string>
+    <string name="time">Choose a Time: </string>
+    <string name="confirm">Confirm Reservation</string>
+    <string name="reset">Reset</string>
+
+</resources>
